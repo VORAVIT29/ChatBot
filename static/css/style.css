@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Noto Serif Thai', serif;
+}
+
+body {
+  background-image: url(/static/images/v870-tang-35.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.containers {
+  --light-color: #fff;
+  background: var(--light-color);
+  bottom: center;
+  box-shadow: 0px 0px 15px 0px black;
+}
+
+.chat-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #5D8D73;
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.chat-header .logo {
+  height: 35px;
+  width: 35px;
+}
+
+.chat-header img {
+  height: 100%;
+  width: 100%;
+}
+
+.chat-header .title {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: auto;
+}
+
+.chat-body {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+  /* align-items: flex-start; */
+  overflow-y: auto;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/static/images/bg_hearth.jpg);
+  background-size: cover;
+}
+
+.chat-input {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #5D8D73;
+}
+
+.input-sec {
+  flex: 9;
+}
+
+.send {
+  padding: 10px;
+}
+
+.mcp {
+  flex: 0.5;
+  padding: 10px;
+}
+
+.send:hover,
+.mcp:hover,
+#enable-voice:hover,
+#disable-voice:hover {
+  border-radius: 50px;
+  background: rgba(128, 128, 128, 0.39);
+  /* background: rgb(255, 0, 0); */
+  cursor: pointer;
+}
+
+#enable-voice,
+#disable-voice {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+#txtInput {
+  line-height: 30px;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  caret-color: black;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.chatbot-message,
+.user-message {
+  font-size: 20px;
+  padding: 8px;
+  /* background: #A1D0BE; */
+  /* margin: 1px; */
+  /* border-radius: 10px 3px 10px 10px; */
+}
+
+.chatbot-message {
+  /* background: #A1D0BE; */
+  background-color: #A1D0BE;
+  width: fit-content;
+  color: var(--light-color);
+  align-self: flex-start;
+  border-radius: 20px 20px 20px 0px;
+  margin: 5px auto 5px 0px;
+}
+
+.left-msg {
+  border-bottom-left-radius: 0;
+}
+
+.user-message {
+  /* background: #cc66ff; */
+  background: #646464;
+  color: var(--light-color);
+  align-self: flex-start;
+  border-radius: 20px 20px 0px 20px;
+  margin: 5px 0px 5px auto;
+}
+
+.right-msg {
+  flex-direction: row-reverse;
+  border-bottom-right-radius: 0;
+}
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.msg:last-of-type {
+  margin: 0;
+}
+
+.msg-img {
+  width: 50px;
+  height: 50px;
+  /* margin-right: 5px; */
+  margin: 5px;
+  background: rgb(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.img-user {
+  background-image: url(/static/images/profile.png);
+}
+
+.img-chatbot {
+  background-image: url(/static/images/chatbot.png);
+
+}
+
+.image01 {
+  /* position: fixed; */
+  /* bottom: center; */
+  /* right: 1100px; */
+}
+
+.text {
+  position: bottom;
+}
+
+#footer {
+  background-color: #5D8D73;
+  /* position: fixed; */
+  text-align: center;
+}
+
+#header {
+  background-color: #5D8D73;
+  margin-bottom: 2%;
+  /* position: fixed; */
+  /* top: 0px; */
+  /* left: 0px; */
+  text-align: center;
+  /* width: 100%; */
+}
+
+.textfont {
+  /* font-family: 'Courier New', Courier, monospace; */
+  color: black;
+}
+
+.load {
+  width: 40px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side, #fff 90%, #0000);
+  background:
+    var(--_g) 0% 50%,
+    var(--_g) 50% 50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 100%;
+  animation: d7 1s infinite linear;
+}
+
+@keyframes d7 {
+  33% {
+    background-size: calc(100%/3) 0%, calc(100%/3) 100%, calc(100%/3) 100%
+  }
+
+  50% {
+    background-size: calc(100%/3) 100%, calc(100%/3) 0%, calc(100%/3) 100%
+  }
+
+  66% {
+    background-size: calc(100%/3) 100%, calc(100%/3) 100%, calc(100%/3) 0%
+  }
+}
