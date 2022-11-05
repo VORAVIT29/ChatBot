@@ -32,5 +32,4 @@ def open_voice():
 if __name__ == '__main__':
     # get ip Address computer
     # ipAddr = socket.gethostbyname(socket.gethostname())
-    app.run(debug=False, host="192.168.0.5", port=5000)
-    # app.run(debug=True)
+    app.run(debug=True)
