@@ -172,20 +172,14 @@ body {
 
 }
 
-.image01 {
-  /* position: fixed; */
-  /* bottom: center; */
-  /* right: 1100px; */
-}
-
 .text {
   position: bottom;
 }
 
 #footer {
-  background-color: #5D8D73;
   /* position: fixed; */
-  text-align: center;
+  background-color: #5D8D73;
+  padding: 2.25rem;
 }
 
 #header {
@@ -199,7 +193,6 @@ body {
 }
 
 .textfont {
-  /* font-family: 'Courier New', Courier, monospace; */
   color: black;
 }
 
