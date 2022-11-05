@@ -1,15 +1,9 @@
-from cmath import inf
 import pickle
-import random
 from colorama import Fore, Style, Back
 import json
 import numpy as np
 from tensorflow import keras
 from sklearn.preprocessing import LabelEncoder
-
-import webbrowser
-import wikipedia
-import urllib.parse
 
 import colorama
 colorama.init()
