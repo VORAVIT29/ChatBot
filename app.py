@@ -1,9 +1,7 @@
-from cgitb import text
 import re
 from flask import Flask, render_template, request
 import chatbot_train_test.chatbot_test as chatbot_predict
 import assistant
-import socket
 app = Flask(__name__)
 
 
@@ -30,6 +28,4 @@ def open_voice():
 
 
 if __name__ == '__main__':
-    # get ip Address computer
-    # ipAddr = socket.gethostbyname(socket.gethostname())
-    app.run(debug=True)
+    app.run(debug=False)
